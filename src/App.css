@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.my-1 {
+	margin: 1rem 0;
+}
+.p-1 {
+	padding: 1rem;
+}
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 2rem;
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+}
+.bg-navbar {
+	background-color: hsl(21, 100%, 58%);
+	color: #fff;
+}
+.news-content {
+	background-color: #fff;
+	color: #333;
+	border: #ccc 1px solid;
+}
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	background-color: hsl(60, 28%, 95%);
+	color: #333;
+}
+.bg-footer {
+	background-color: #fff;
+	color: #000;
+}
+/* ul {
+	list-style: none;
+} */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.7rem 2rem;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	border-bottom: solid 3px hsl(0, 0%, 27%);
+	opacity: 0.9;
+}
+
+.content-header {
+	padding: 0.5rem;
+	background-color: hsl(21deg 100% 84%);
+	color: #fff;
+	text-align: center;
+}
+.news-inner {
+	display: grid;
+	grid-template-rows: 1fr;
+	text-align: start;
+}
+.form input[type="submit"] {
+	font: inherit;
+}
+.btn.btn-dark {
+	background-color: #343a40;
+	color: #fff;
+}
+
+.btn {
+	display: inline-block;
+	background: #f4f4f4;
+	color: #333;
+	padding: 0.4rem 1.3rem;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+	outline: none;
+	transition: all 0.2s ease-in;
+}
+
+.form .inputfiled {
+	display: block;
+	width: 100%;
+	padding: 0.4rem;
+	font-size: 1.2rem;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.7rem 2rem;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	border-top: solid 3px hsl(0, 0%, 27%);
+}
+@media (max-width: 700px) {
+	.container {
+		margin-top: 8rem;
+	}
+	.navbar {
+		display: block;
+		text-align: center;
+	}
+	/* .navbar ul {
+		text-align: center;
+		justify-content: center;
+	} */
+	.navbar h1 {
+		margin-bottom: 1rem;
+	}
+	.news-inner {
+		grid-template-columns: 1fr;
+	}
+}
